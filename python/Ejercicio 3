@@ -1,0 +1,11 @@
+# Solicitar al usuario que ingrese las cuatro notas
+nota1 = float(input("Primera nota: "))
+nota2 = float(input("Segunda nota: "))
+nota3 = float(input("Tercera nota: "))
+nota4 = float(input("Cuarta nota: "))
+
+# Calcular el promedio
+promedio = (nota1 + nota2 + nota3 + nota4) / 4
+
+# Mostrar el resultado
+print(f"El promedio es: {promedio:.2f}")

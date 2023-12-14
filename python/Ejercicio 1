@@ -1,0 +1,7 @@
+numero=input("Ingrese el numero: ")
+numero=numero+1
+print ("numero: "+sorted(numero))
+
+nombre="Alicia"
+edad=25
+print("Nombre: {}, Edad: {}", format (nombre,edad))

@@ -1,0 +1,13 @@
+import math
+
+# Solicitar al usuario que ingrese el radio
+radio = float(input("Ingrese el radio: "))
+
+# Calcular el perímetro y el área
+perimetro = 2 * math.pi * radio
+area = math.pi * radio**2
+
+# Mostrar los resultados
+print(f"Perimetro: {perimetro:.1f}")
+print(f"Área: {area:.1f}")
+
