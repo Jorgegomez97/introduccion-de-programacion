@@ -1,0 +1,32 @@
+def resultado_set(juegos_A, juegos_B):
+    # Verificar si el resultado es inválido
+    if abs(juegos_A - juegos_B) > 2 or (juegos_A > 7 or juegos_B > 7):
+        return "Invalido"
+    
+    # Verificar si el set ya terminó
+    if juegos_A >= 6 and juegos_A - juegos_B >= 2:
+        return "Gano A"
+    elif juegos_B >= 6 and juegos_B - juegos_A >= 2:
+        return "Gano B"
+    elif juegos_A == 6 and juegos_B == 6:
+        return "Aun no termina"
+    elif juegos_A == 7 and juegos_B == 5:
+        return "Gano A"
+    elif juegos_B == 7 and juegos_A == 5:
+        return "Gano B"
+    elif juegos_A == 7 and juegos_B == 6:
+        return "Gano A"
+    elif juegos_B == 7 and juegos_A == 6:
+        return "Gano B"
+    else:
+        return "Aun no termina"
+
+# Solicitar al usuario que ingrese el número de juegos ganados por A y B
+juegos_ganados_A = int(input("Juegos ganados por A: "))
+juegos_ganados_B = int(input("Juegos ganados por B: "))
+
+# Obtener el resultado del set
+resultado = resultado_set(juegos_ganados_A, juegos_ganados_B)
+
+# Mostrar el resultado
+print(resultado)

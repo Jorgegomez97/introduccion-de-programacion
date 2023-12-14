@@ -1,0 +1,21 @@
+from datetime import datetime
+
+# Obtener la fecha actual
+fecha_actual = datetime.now()
+
+# Solicitar al usuario que ingrese su fecha de nacimiento
+dia_nacimiento = int(input("Dia: "))
+mes_nacimiento = int(input("Mes: "))
+anio_nacimiento = int(input("Año: "))
+
+# Crear un objeto de fecha para la fecha de nacimiento
+fecha_nacimiento = datetime(anio_nacimiento, mes_nacimiento, dia_nacimiento)
+
+# Calcular la edad
+if fecha_actual >= fecha_nacimiento.replace(year=fecha_actual.year):
+    edad = fecha_actual.year - fecha_nacimiento.year
+else:
+    edad = fecha_actual.year - fecha_nacimiento.year - 1
+
+# Mostrar el resultado
+print(f"Usted tiene {edad} años.")

@@ -1,0 +1,14 @@
+# Solicitar al usuario que ingrese dos palabras
+palabra1 = input("Palabra 1: ")
+palabra2 = input("Palabra 2: ")
+
+# Calcular la diferencia de longitud entre las dos palabras
+diferencia_longitud = len(palabra1) - len(palabra2)
+
+# Determinar cuál palabra es más larga y mostrar el resultado
+if diferencia_longitud > 0:
+    print(f"La palabra {palabra1} tiene {diferencia_longitud} letras más que {palabra2}.")
+elif diferencia_longitud < 0:
+    print(f"La palabra {palabra2} tiene {abs(diferencia_longitud)} letras más que {palabra1}.")
+else:
+    print("Las dos palabras tienen el mismo largo.")
