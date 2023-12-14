@@ -1,0 +1,11 @@
+# Factor de conversión de centímetros a pulgadas
+CM_TO_INCH = 2.54
+
+# Solicitar al usuario que ingrese la longitud en centímetros
+longitud_cm = float(input("Ingrese longitud en centímetros: "))
+
+# Realizar la conversión
+longitud_pulgadas = longitud_cm / CM_TO_INCH
+
+# Mostrar el resultado
+print(f"{longitud_cm} cm = {longitud_pulgadas:.4f} in")

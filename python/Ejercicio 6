@@ -1,0 +1,9 @@
+# Solicitar al usuario la hora actual y la cantidad de horas
+hora_actual = int(input("Hora actual: "))
+cantidad_horas = int(input("Cantidad de horas: "))
+
+# Calcular la hora futura
+hora_futura = (hora_actual + cantidad_horas) % 12
+
+# Mostrar el resultado
+print(f"En {cantidad_horas} horas, el reloj marcará las {hora_futura if hora_futura != 0 else 12}"
