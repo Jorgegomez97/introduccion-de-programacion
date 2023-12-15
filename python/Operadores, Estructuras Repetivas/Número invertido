@@ -1,0 +1,21 @@
+# Programa para un entero de tres dígitos
+numero = int(input("Ingrese un número de tres dígitos: "))
+
+# Verificar que el número tiene tres dígitos
+if 100 <= numero <= 999:
+    # Convertir el número a cadena y revertir la cadena
+    numero_invertido = int(str(numero)[::-1])
+    print("Número invertido:", numero_invertido)
+else:
+    print("Por favor, ingrese un número de tres dígitos.")
+    
+    # Programa para un entero de n dígitos
+numero = int(input("Ingrese un número de n dígitos: "))
+
+# Verificar que el número es positivo
+if numero > 0:
+    # Convertir el número a cadena y revertir la cadena
+    numero_invertido = int(str(numero)[::-1])
+    print("Número invertido:", numero_invertido)
+else:
+    print("Por favor, ingrese un número positivo.")

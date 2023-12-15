@@ -1,0 +1,22 @@
+# Solicitar al usuario la cantidad de palabras
+n = int(input("Cantidad de palabras: "))
+
+# Inicializar variables para la palabra más larga y más corta
+palabra_mas_larga = ""
+palabra_mas_corta = None
+
+# Bucle para ingresar las palabras
+for i in range(1, n + 1):
+    palabra = input(f"Palabra {i}: ")
+    
+    # Verificar si es la palabra más larga
+    if len(palabra) > len(palabra_mas_larga):
+        palabra_mas_larga = palabra
+    
+    # Verificar si es la palabra más corta
+    if palabra_mas_corta is None or len(palabra) < len(palabra_mas_corta):
+        palabra_mas_corta = palabra
+
+# Mostrar resultados
+print(f"La palabra mas larga es {palabra_mas_larga}")
+print(f"La palabra mas corta es {palabra_mas_corta}")

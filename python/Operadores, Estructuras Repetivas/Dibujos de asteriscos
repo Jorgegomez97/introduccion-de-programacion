@@ -1,0 +1,32 @@
+ Programa para dibujar un rectángulo
+altura = int(input("Altura: "))
+ancho = int(input("Ancho: "))
+
+for _ in range(altura):
+    print('*' * ancho)
+    
+# Programa para dibujar un triángulo
+altura = int(input("Altura del triángulo: "))
+
+for i in range(1, altura + 1):
+    print('*' * i)
+    
+# Programa para dibujar un hexágono
+lado = int(input("Lado del hexágono: "))
+
+# Calcular la altura del triángulo central del hexágono
+altura_hexagono = lado * 2 - 1
+
+# Dibujar la parte superior del hexágono
+for i in range(1, lado + 1):
+    espacio = ' ' * (lado - i)
+    asteriscos = '*' * (2 * i - 1)
+    print(espacio + asteriscos)
+
+# Dibujar la parte inferior del hexágono
+for i in range(lado - 1, 0, -1):
+    espacio = ' ' * (lado - i)
+    asteriscos = '*' * (2 * i - 1)
+    print(espacio + asteriscos)
+    
+    

@@ -1,0 +1,20 @@
+def contar_combinaciones(puntaje_deseado):
+    combinaciones = 0
+
+    # Iterar sobre los valores posibles de los dados
+    for dado1 in range(1, 7):
+        for dado2 in range(1, 7):
+            # Verificar si la suma de los dados es igual al puntaje deseado
+            if dado1 + dado2 == puntaje_deseado:
+                combinaciones += 1
+
+    return combinaciones
+
+# Solicitar al usuario ingresar un puntaje
+puntaje = int(input("Ingrese el puntaje: "))
+
+# Contar las combinaciones para el puntaje ingresado
+num_combinaciones = contar_combinaciones(puntaje)
+
+# Mostrar el resultado
+print(f"Hay {num_combinaciones} combinaciones para obtener {puntaje}")
