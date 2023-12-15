@@ -1,4 +1,3 @@
- Programa para dibujar un rectángulo
 altura = int(input("Altura: "))
 ancho = int(input("Ancho: "))
 
